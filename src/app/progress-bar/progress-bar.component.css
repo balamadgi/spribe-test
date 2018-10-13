@@ -1,0 +1,44 @@
+.timer {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 30px;	
+	flex-direction: row;
+}
+
+.circle-with-shadow {
+	position: absolute;
+	z-index: 0;
+	height: 110px;
+	width: 110px;
+	border-radius: 50%;
+	background-color: #262830;
+	box-shadow: 0 0 10px 10px #C3D3B0;
+}
+
+.progress-bar {
+	background-color: transparent;
+	z-index: 1;
+}
+
+.circle-arround-img {
+border-radius: 50%;
+height: 100px;
+width: 100px;
+background-color: #FADC3E;
+position: absolute;
+z-index: 3;
+}
+
+.img-rounded {
+border-radius: 50%;
+height: 90px;
+width: 90px;
+position: absolute;
+z-index: 4;
+}
+
+.global-timer .circle-with-shadow {
+	box-shadow: 0 0 10px 10px #FFD1AB;
+}

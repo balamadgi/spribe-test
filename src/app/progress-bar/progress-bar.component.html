@@ -1,0 +1,41 @@
+			<div class="timer local-timer">
+						<round-progress class="progress-bar"
+						[current]="80"
+						[max]="100"   
+						[background]="'rgba(1, 1, 1, 0)'"
+						[radius]="60"
+						[stroke]="20"
+						[semicircle]="false"
+						[rounded]="false"
+						[clockwise]="false"
+						[responsive]="false"
+						[duration]="localTimer.duration"
+						[animation]="'linearEase'"
+						[animationDelay]="0"			
+						[color]="'#4E9101'">
+					</round-progress>
+						<div class="circle-arround-img"></div>
+						<div class="circle-with-shadow"></div>
+						<img class="img-rounded" alt="avatar" [src]="activeAvatar">					
+			</div>
+
+			<div class="timer global-timer">
+							<round-progress class="progress-bar"
+							[current]="80"
+							[max]="100"   
+							[background]="'rgba(1, 1, 1, 0)'"
+							[radius]="60"
+							[stroke]="20"
+							[semicircle]="false"
+							[rounded]="false"
+							[clockwise]="false"
+							[responsive]="false"
+							[duration]="globalTimer.duration"
+							[animation]="'linearEase'"
+							[animationDelay]="localTimer.duration"			
+							[color]="'#DA5600'">
+						</round-progress>
+							<div class="circle-arround-img"></div>
+							<div class="circle-with-shadow"></div>
+							<img class="img-rounded" alt="avatar" [src]="activeAvatar">					
+			</div>

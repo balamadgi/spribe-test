@@ -1,0 +1,29 @@
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header p {
+	font-size: 40px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+header a {
+	align-self: center;
+	margin-right: 10px;
+	color: black;
+}
+
+main {
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	min-height: 500px;
+}
+
+bii-progress-bar {
+	display: flex;
+	flex-direction: row;
+}
