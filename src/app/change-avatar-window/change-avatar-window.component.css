@@ -30,15 +30,15 @@
 	position: absolute;
 	right: 30px;	
 	top: 20px;
-	height: 4px;
-	width: 4px;
+	height: 3px;
+	width: 3px;
 	border-radius: 50%;
 	background-color: #E40C33;
 }
 .close > span {
 	color: #fff;
 	position: absolute;
-	right: 6.85px;
+	right: 7.5px;
 	top: 2px;
 }
 
