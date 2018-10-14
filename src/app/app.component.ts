@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Image } from './share/models/image.model';
 
 @Component({
   selector: 'bii-root',
@@ -7,6 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'test-spribe';
+	changedAva: Image;
+	openChangeAvaWindow: boolean = false;
+
+	onCloseChangeAvaWindow() {
+		this.openChangeAvaWindow = false;
+	}
+
+	onOpenChangeAvaWindow() {
+		this.openChangeAvaWindow = true;
+	}
 	
-	changeAvatar = true;
+	onChangeAvaApply(event) {
+		this.changedAva = event;
+	  this.openChangeAvaWindow = false;
+	}	
 }

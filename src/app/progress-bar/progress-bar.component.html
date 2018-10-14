@@ -1,6 +1,6 @@
-			<div class="timer local-timer">
+			<div class="timer local-timer" (click)="onOpenChangeAvaWindow('local')">
 						<round-progress class="progress-bar"
-						[current]="80"
+						[current]="100"
 						[max]="100"   
 						[background]="'rgba(1, 1, 1, 0)'"
 						[radius]="60"
@@ -12,16 +12,18 @@
 						[duration]="localTimer.duration"
 						[animation]="'linearEase'"
 						[animationDelay]="0"			
-						[color]="'#4E9101'">
+						[color]="'#4E9101'"
+						>
 					</round-progress>
 						<div class="circle-arround-img"></div>
 						<div class="circle-with-shadow"></div>
-						<img class="img-rounded" alt="avatar" [src]="activeAvatar">					
+						<img class="img-rounded" alt="avatar" [src]="localTimer.image.imgAdress">					
 			</div>
 
-			<div class="timer global-timer">
+			<div class="timer global-timer"
+			(click)="onOpenChangeAvaWindow('global')">
 							<round-progress class="progress-bar"
-							[current]="80"
+							[current]="100"
 							[max]="100"   
 							[background]="'rgba(1, 1, 1, 0)'"
 							[radius]="60"
@@ -37,5 +39,5 @@
 						</round-progress>
 							<div class="circle-arround-img"></div>
 							<div class="circle-with-shadow"></div>
-							<img class="img-rounded" alt="avatar" [src]="activeAvatar">					
+							<img class="img-rounded" alt="avatar" [src]="globalTimer.image.imgAdress">					
 			</div>

@@ -2,15 +2,26 @@
 <p>spribe</p>
 <a href="https://www.spribe.co/welcome">spribe.co</a>
 </header>
-
 <main>
-		<bii-progress-bar></bii-progress-bar>
+		<bii-progress-bar
+		(openChangeAvaWindow)="onOpenChangeAvaWindow()"
+		[changedImg]="changedAva"
+		></bii-progress-bar>
 
-		<bii-change-avatar-window></bii-change-avatar-window>
+		<div *ngIf="openChangeAvaWindow">
+		<bii-change-avatar-window
+		(closeChangeAvaWindow)="onCloseChangeAvaWindow()"
+		(changeAva)="onChangeAvaApply($event)">
+	</bii-change-avatar-window>
+</div>
 </main>
-
 <footer>
-
+<p>SPRIBE <br/>
+	Tartu mnt 83-701, 10115, Tallinn, Estonia</p>
+<p>The company is registered in Estonia. <br/>
+	Registration no.
+	14540763
+</p>
 </footer>
 
 
